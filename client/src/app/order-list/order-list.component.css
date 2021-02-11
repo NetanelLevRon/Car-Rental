@@ -1,0 +1,74 @@
+div{
+    padding-top: 5vh;
+    color: dimgray;
+}
+h3{
+text-align: center;
+margin: 0px 0 35px 0;
+padding-top: 40px;
+font-style: italic;
+color: #337ab7;
+}
+h4{
+    text-align: center;
+    margin: 0px 0 35px 0;
+    padding-top: 20px;
+    font-style: italic;
+    color: grey;
+    }
+/* ------------------------------------------------------- */
+.imgDiv{
+    height: 350px;
+    padding: 0;
+    overflow: auto;
+    margin: auto;
+    width: 93%;
+}
+.imgDiv a{
+    display: inline-flex;
+    min-width: 290px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 5px;
+}
+.imgDiv img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.imgDiv p{
+    display: inline-block;
+    margin: 3px;
+}
+a:hover, a:visited {
+    text-decoration: none;
+    color: #337ab7;
+}
+.pAnswer{
+    float: right;
+    color: gray;
+}
+.pAnswer:hover, .pAnswer:visited {
+    color: gray;
+}
+/* ------------------------------------------------------- */
+@media screen and (min-width: 770px){
+ a{
+     width: 48%;
+  }
+}
+@media screen and (min-width: 1000px){
+    a{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    a{
+        width: 100%;
+    }
+    p{
+        width: 40%;
+    }
+}

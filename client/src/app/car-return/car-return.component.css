@@ -1,0 +1,61 @@
+#mainDiv{
+    width: 90%;
+    padding-top: 25px;
+    height: 100%;
+    margin: auto;
+}
+#rightDiv{
+    width: 45%;
+    height: 45%;
+    float: right;
+    text-align: left;
+}
+#rightDiv input{
+    width: 90%;
+}
+#rightDiv button{
+    width: 90%;
+}
+#leftDiv{
+    display: inline-table;
+    width: 45%;
+    height: 45%;
+    float: left;
+    text-align: right;
+    text-align: center;
+    border: lightslategray 1px solid;
+    max-width: 350px;
+    max-height: 350px;
+}
+#leftDiv p{
+    padding-bottom: 35%;
+    margin-top: 35%;
+}
+#errMsg{
+    color:red;
+}
+@media screen and (max-width: 660px){
+
+    #rightDiv{
+        float: none;
+        text-align: center;
+        padding-top: 5%;
+        margin: auto;
+        padding-bottom: 5%;
+        
+    }
+    #leftDiv{
+        display: block;
+        height: auto;
+        float: none;
+        margin: auto;
+        text-align: center;
+        border: lightslategray 1px solid;
+    }
+    #rightDiv input{
+        width: 100%;
+    }
+    #rightDiv button{
+        width: 100%;
+    }
+}

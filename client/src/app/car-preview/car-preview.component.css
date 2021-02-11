@@ -1,0 +1,47 @@
+#mainDiv{
+    width: 95%;
+   height: 100%;
+   padding-top: 15px;
+   margin: auto;
+}
+p{
+    font-size: 15px;
+    display: inline-block;
+    color: cornflowerblue;
+   float: right;
+   margin-right:15px;
+}
+img{
+    width: 90%;
+    height: 45%;
+}
+#firstH3{
+    margin-top: 0px;
+}
+#rightDiv{
+    width: 45%;
+    height: 45%;
+    float: right;
+    text-align: left;
+    
+}
+#leftDiv{
+    width: 45%;
+    float: left;
+    padding-bottom: 15px;
+}
+.btnL{
+    width: 90%;
+    margin-top: 10px;
+}
+@media screen and (max-width: 660px){
+    img{
+        width: 90%;
+    }
+    .btnL{
+        width: 90%;
+    }
+    p{
+        display: contents;
+    }
+}

@@ -1,0 +1,34 @@
+<div id="mainDiv">
+
+  <div id="leftDiv">
+
+    <img *ngIf="!currentCar.Image" src="{{_imageService.defaultCarImg}}" />
+    <img *ngIf="currentCar.Image" src="{{currentCar.Image}}" />
+
+    <button class="btnL" routerLink="/cars/car-price">Rental cost</button>
+    <button class="btnL" *ngIf="user.UserRole == 'customer'"
+      routerLink="/cars/car-order">Order</button><br /><br />
+
+  </div>
+
+  <div id="rightDiv">
+
+    <h3 id="firstH3">Manufacturer Name:<p>{{currentCar.ManufacturerName}}</p>
+    </h3>
+    <h3>Model:<p>{{currentCar.Model}}</p>
+    </h3>
+    <h3>Cost per day:<p>{{currentCar.DayCost}}</p>
+    </h3>
+    <h3>Cost per day late:<p>{{currentCar.DayLateCost}}</p>
+    </h3>
+    <h3>Manifecturer year:<p>{{currentCar.ManufacturerYear}}</p>
+    </h3>
+    <h3>Transmission:<p>{{currentCar.Transmission == true? "Auto": "Manual"}}</p>
+    </h3>
+    <h3>Branch:<p>{{currentCar.BranchName}}</p>
+    </h3>
+
+  </div>
+
+
+</div>

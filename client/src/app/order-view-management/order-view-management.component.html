@@ -1,0 +1,149 @@
+<form class="container" #orderSearchForm="ngForm" (ngSubmit)="filterOrders(orderSearchForm)">
+  <h3>Search Orders For Edit</h3>
+  <div id="mainDiv">
+   
+        <div id="manfact" class="bar-search">
+        <label>Free text:</label>
+        <br /><br />
+        <input name="FreeText" type="Text" placeholder="Free text" [(ngModel)]="FreeText" />
+      </div>
+
+      <div class="bar-search">
+      <label>Rental start:</label>
+      <br /><br />
+      <input name="RentalStart" type="date" placeholder="RentalStart" [(ngModel)]="RentalStart">
+    </div>
+
+    <div class="bar-search">
+      <label>Rental end:</label>
+      <br /><br />
+      <input name="RentalEnd" type="date" placeholder="RentalEnd" [(ngModel)]="RentalEnd">
+    </div>
+
+    <div class="bar-search">
+      <label>Actual rental end:</label>
+      <br /><br />
+      <input name="ActualRentalEnd" type="date" placeholder="ActualRentalEnd" [(ngModel)]="ActualRentalEnd">
+    </div>
+
+    <div id="btn" class="bar-search">
+      <br /><br />
+      <input id="btnInput" type="submit" value="search">
+    </div>
+
+  </div>
+</form>
+
+
+<h3>ORDERS FOR EDIT</h3>
+<div>
+  <div *ngIf="!filtersOrders">
+
+    <div class="imgDiv">
+
+      <div class="card" *ngFor="let x of orders.orderList">
+
+        <p>Rental start:<br />Rental end:<br />Actual rental end:<br /> </p>
+        <p *ngIf="!(orderId==x.OrderID)" class="pAnswer">
+          {{x.RentalStart | date:'dd/MM/yyyy'}}<br />{{x.RentalEnd | date:'dd/MM/yyyy'}}<br />
+          {{x.ActualRentalEnd | date:'dd/MM/yyyy'}}<br />
+        </p>
+
+        <!-- --------------------------------------------- -->
+
+        <div *ngIf="actionMsg && idForActionMsg == x.OrderID" id="actionMsgDiv">
+          {{actionMsg}}
+        </div>
+
+        <form #editForm="ngForm" (ngSubmit)="OnSubmit(x)">
+
+          <p *ngIf="orderId==x.OrderID" class="pEdit">
+
+            <span class="errMsg" *ngIf="rentalStartErrMsg && idForErr == x.OrderID">{{rentalStartErrMsg}}</span>
+            <input type="date" value="{{x.RentalStart}}" #rs="ngModel" [(ngModel)]="rentalStart"
+              name="rentalStart"><br />
+
+            <span class="errMsg" *ngIf="rentalEndErrMsg && idForErr == x.OrderID">{{rentalEndErrMsg}}</span>
+            <input type="date" value="{{x.RentalEnd}}" #re="ngModel" [(ngModel)]="rentalEnd" name="rentalEnd"><br />
+
+            <span class="errMsg" *ngIf="actualRentalEndErrMsg && idForErr == x.OrderID">{{actualRentalEndErrMsg}}</span>
+            <input type="date" value="{{x.ActualRentalEnd}}" #are="ngModel" [(ngModel)]="actualRentalEnd"
+              name="actualRentalEnd"><br />
+
+          </p>
+
+          <span class="twoBtn" *ngIf="!(orderId==x.OrderID)">
+            <button class="editButn" (click)="edit('editBtn', x)">Edit</button> 
+            <button type="button" class="editButn" (click)="delete(x)">Delete</button>
+
+          </span>
+
+          <span class="twoBtn">
+            <button type="submit" *ngIf="orderId==x.OrderID" class="editButn">Save</button>
+            <button *ngIf="orderId==x.OrderID" class="editButn" (click)="edit('backBtn')">Back</button>
+          </span>
+
+        </form>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div *ngIf="filtersOrders">
+
+    <div class="imgDiv">
+
+      <div class="card" *ngFor="let x of filtersOrders.orderList">
+
+        <p>Rental start:<br />Rental end:<br />Actual rental end:<br /> </p>
+        <p *ngIf="!(orderId==x.OrderID)" class="pAnswer">
+          {{x.RentalStart | date:'dd/MM/yyyy'}}<br />{{x.RentalEnd | date:'dd/MM/yyyy'}}<br />
+          {{x.ActualRentalEnd | date:'dd/MM/yyyy'}}<br />
+        </p>
+
+        <!-- --------------------------------------------- -->
+
+        <div *ngIf="actionMsg && idForActionMsg == x.OrderID" id="actionMsgDiv">
+          {{actionMsg}}
+        </div>
+
+        <form #editForm="ngForm" (ngSubmit)="OnSubmit(x)">
+
+          <p *ngIf="orderId==x.OrderID" class="pEdit">
+
+            <span class="errMsg" *ngIf="rentalStartErrMsg && idForErr == x.OrderID">{{rentalStartErrMsg}}</span>
+            <input type="date" value="{{x.RentalStart}}" #rs="ngModel" [(ngModel)]="rentalStart"
+              name="rentalStart"><br />
+
+            <span class="errMsg" *ngIf="rentalEndErrMsg && idForErr == x.OrderID">{{rentalEndErrMsg}}</span>
+            <input type="date" value="{{x.RentalEnd}}" #re="ngModel" [(ngModel)]="rentalEnd" name="rentalEnd"><br />
+
+            <span class="errMsg" *ngIf="actualRentalEndErrMsg && idForErr == x.OrderID">{{actualRentalEndErrMsg}}</span>
+            <input type="date" value="{{x.ActualRentalEnd}}" #are="ngModel" [(ngModel)]="actualRentalEnd"
+              name="actualRentalEnd"><br />
+
+          </p>
+
+ 
+          <span class="twoBtn" *ngIf="!(orderId==x.OrderID)">
+            <button class="editButn" (click)="edit('editBtn', x)">Edit</button>
+            <button type="button" class="editButn" (click)="delete(x)">Delete</button>
+
+          </span>
+
+          <span class="twoBtn">
+            <button type="submit" *ngIf="orderId==x.OrderID" class="editButn">Save</button>
+            <button *ngIf="orderId==x.OrderID" class="editButn" (click)="edit('backBtn')">Back</button>
+          </span>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

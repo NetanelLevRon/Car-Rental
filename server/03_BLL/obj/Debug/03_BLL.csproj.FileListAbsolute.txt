@@ -1,0 +1,35 @@
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\obj\Debug\03_BLL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\obj\Debug\03_BLL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\03_BLL.dll.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\03_BLL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\03_BLL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\02_BOL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\02_BOL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\obj\Debug\03_BLL.csproj.CopyComplete
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\obj\Debug\03_BLL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\03_BLL\obj\Debug\03_BLL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\03_BLL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\03_BLL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\03_BLL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\02_BOL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\02_BOL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\obj\Debug\03_BLL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\obj\Debug\03_BLL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\obj\Debug\03_BLL.csproj.CopyComplete
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\obj\Debug\03_BLL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\obj\Debug\03_BLL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\03_BLL\bin\Debug\02_BOL.dll.config

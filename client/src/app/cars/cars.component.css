@@ -1,0 +1,220 @@
+#mainDiv{
+    width: 90%;
+    min-height: 350px; 
+    margin: auto;
+    display: flow-root;
+    border-bottom: solid 1px;
+}
+
+div{
+    padding-top: 5vh;
+    color: dimgray;
+}
+input, select{
+    max-width: 100%;
+    min-width: 100%;
+    border-bottom: solid 0 gray;
+    border-width: 0 0 1px 0;
+    background-color: whitesmoke;
+    padding:  0 0 1px 0;
+    outline: none;
+    
+}
+input:active{
+    border-style: none;
+    border: 0px;
+}
+
+.bar-search{
+    display: block;
+    width: 20%;
+    padding: 10px 3vh;
+    float: left;
+    height: 100px;
+    margin: auto;
+}
+
+#btn{
+   float: right;
+}
+
+#btnInput{
+   padding: 3px 0 0 0;
+   border-width: 1px 1px 1px 1px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+ }
+
+h3{
+text-align: center;
+margin: 40px 0 35px 0;
+font-style: italic;
+color: #337ab7;
+}
+
+/* ------------------------------------------------------- */
+
+.imgDiv{
+    height: 350px;
+    padding: 0;
+    overflow: auto;
+    margin: auto;
+    width: 93%;
+    padding-top: 15px;
+    margin-top: 25px;
+    border-top: solid gray 1px;
+}
+.imgDiv a{
+    display: inline-flex;
+    min-width: 300px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 5px;
+}
+.imgDiv #aInterst{
+    background-color: cornsilk;
+}
+.imgDiv img{
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+.imgDiv p{
+    display: inline-block;
+    margin: 3px;
+}
+
+a:hover, a:visited {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.pAnswer{
+    float: right;
+    color: gray;
+}
+.pAnswer:hover, .pAnswer:visited {
+    color: gray;
+}
+
+h4{
+    text-align: center;
+    color: lightsalmon;
+    
+}
+
+.errMsg{
+    color: red;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+/* ------------------------------------------------------- */
+
+
+@media screen and (max-width: 1016px){
+    .container{
+      width: 100%;
+    }
+}
+@media screen and (min-width: 770px){
+    a{
+        width: 48%;
+     }
+   }
+   @media screen and (min-width: 1000px){
+       a{
+           width: 30%;
+       }
+   }
+
+@media screen and (max-width: 750px){
+
+    #mainDiv{
+        width: 90%;
+    }
+    .bar-search{
+        width: 50%;
+        padding: 10px 5vh;
+    }
+    #manfact{
+        min-width: 100%;
+    }
+    #btn{
+        display: contents;
+        margin-top: 35px;
+    }
+    .dates{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    a{
+        width: 100%;
+    }
+    p{
+        width: 40%;
+    }
+    #btnInput{
+        margin-top: 35px;
+    }
+    #dateS{
+        margin-top: 20px;
+    }
+    #dateE{
+        margin-top: 20px;
+    }
+    .errMsg{
+        margin-bottom: -35px;
+        width: auto;
+    }
+}
+
+
+
+
+
+
+.loader2 {
+    font-size: 19px;
+    margin: 5em auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load2 1.3s infinite linear;
+    animation: load2 1.3s infinite linear;
+  }
+  @-webkit-keyframes load2 {
+    0%,
+    100% {
+      box-shadow: 0em -3em 0em 0.2em #666060, 2em -2em 0 0em #666060, 3em 0em 0 -0.5em #666060, 2em 2em 0 -0.5em #666060, 0em 3em 0 -0.5em #666060, -2em 2em 0 -0.5em #666060, -3em 0em 0 -0.5em #666060, -2em -2em 0 0em #666060;
+    }
+    12.5% {
+      box-shadow: 0em -3em 0em 0em #666060, 2em -2em 0 0.2em #666060, 3em 0em 0 0em #666060, 2em 2em 0 -0.5em #666060, 0em 3em 0 -0.5em #666060, -2em 2em 0 -0.5em #666060, -3em 0em 0 -0.5em #666060, -2em -2em 0 -0.5em #666060;
+    }
+    25% {
+      box-shadow: 0em -3em 0em -0.5em #666060, 2em -2em 0 0em #666060, 3em 0em 0 0.2em #666060, 2em 2em 0 0em #666060, 0em 3em 0 -0.5em #666060, -2em 2em 0 -0.5em #666060, -3em 0em 0 -0.5em #666060, -2em -2em 0 -0.5em #666060;
+    }
+    37.5% {
+      box-shadow: 0em -3em 0em -0.5em #666060, 2em -2em 0 -0.5em #666060, 3em 0em 0 0em #666060, 2em 2em 0 0.2em #666060, 0em 3em 0 0em #666060, -2em 2em 0 -0.5em #666060, -3em 0em 0 -0.5em #666060, -2em -2em 0 -0.5em #666060;
+    }
+    50% {
+      box-shadow: 0em -3em 0em -0.5em #666060, 2em -2em 0 -0.5em #666060, 3em 0em 0 -0.5em #666060, 2em 2em 0 0em #666060, 0em 3em 0 0.2em #666060, -2em 2em 0 0em #666060, -3em 0em 0 -0.5em #666060, -2em -2em 0 -0.5em #666060;
+    }
+    62.5% {
+      box-shadow: 0em -3em 0em -0.5em #666060, 2em -2em 0 -0.5em #666060, 3em 0em 0 -0.5em #666060, 2em 2em 0 -0.5em #666060, 0em 3em 0 0em #666060, -2em 2em 0 0.2em #666060, -3em 0em 0 0em #666060, -2em -2em 0 -0.5em #666060;
+    }
+    75% {
+      box-shadow: 0em -3em 0em -0.5em #666060, 2em -2em 0 -0.5em #666060, 3em 0em 0 -0.5em #666060, 2em 2em 0 -0.5em #666060, 0em 3em 0 -0.5em #666060, -2em 2em 0 0em #666060, -3em 0em 0 0.2em #666060, -2em -2em 0 0em #666060;
+    }
+    87.5% {
+      box-shadow: 0em -3em 0em 0em #666060, 2em -2em 0 -0.5em #666060, 3em 0em 0 -0.5em #666060, 2em 2em 0 -0.5em #666060, 0em 3em 0 -0.5em #666060, -2em 2em 0 0em #666060, -3em 0em 0 0em #666060, -2em -2em 0 0.2em #666060;
+    }
+  }

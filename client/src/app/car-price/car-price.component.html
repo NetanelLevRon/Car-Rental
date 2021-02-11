@@ -1,0 +1,61 @@
+<div id="mainDiv">
+
+
+  <div id="leftDiv">
+
+    <img *ngIf="!currentCar.Image" src="{{_imageService.defaultCarImg}}" />
+    <img *ngIf="currentCar.Image" src="{{currentCar.Image}}" />
+
+
+    <button class="btnL" *ngIf="user.UserRole == 'customer'"
+      routerLink="/cars/car-order">Order</button>
+    <button class="btnL" routerLink="/cars" (click) = "deActivateRouter()">Back to catalog</button>
+
+    <div id="datesDiv" *ngIf="allOpenOrders.orderList">
+      <div *ngIf="allOpenOrders.orderList[0]">
+        <h4>Not available dates:</h4>
+        <div *ngFor="let x of allOpenOrders.orderList">
+          <p>{{x.RentalStart | date:'dd/MM/yyyy'}} - {{x.RentalEnd | date:'dd/MM/yyyy'}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="rightDiv">
+
+    <h4 id="firstH4">Manufacturer Name:<p>{{currentCar.ManufacturerName}}</p>
+    </h4>
+    <h4>Model:<p>{{currentCar.Model}}</p>
+    </h4>
+    <h4>Cost per day:<p>{{currentCar.DayCost}}</p>
+    </h4>
+    <h4>Cost per day late:<p>{{currentCar.DayLateCost}}</p>
+    </h4>
+    <div id="botomDiv">
+      <form #priceValid="ngForm" (ngSubmit)="OnSubmit(priceValid)">
+        <label>date of rental start:</label><br />
+        <p class="errMsg" *ngIf="inCorrectFdtMsg">{{inCorrectFdtMsg}}</p>
+        <p class="errMsg" *ngIf="inValidOrderFdMsg">{{inValidOrderFdMsg}}</p>
+        <input type="date" [(ngModel)]="rentalStart" (change)="dateValidation()" name="rentalStart" required><br />
+        <label>date of rental end:</label><br />
+        <p class="errMsg" *ngIf="inCorrectSdtMsg">{{inCorrectSdtMsg}}</p>
+        <p class="errMsg" *ngIf="inValidOrderSdMsg">{{inValidOrderSdMsg}}</p>
+        <input type="date" [(ngModel)]="rentalEnd" (change)="dateValidation()" name="rentalEnd" required>
+      </form>
+
+
+      <button (click)="numberOfDays(rentalStart,rentalEnd)" id="btnR" title="You must fill Range of dates" type="submit"
+        [disabled]="!priceValid.valid">Register</button>
+    </div>
+    <div id="finlePriceId">
+      <h2 *ngIf="!finelPrice">Finel price <p id="pPrice" *ngIf="finelPrice">{{finelPrice}} ש"ח</p>
+      </h2>
+      <h2 *ngIf="finelPrice">
+        <p id="pPrice" *ngIf="finelPrice">for <span>{{diffDays}}</span> days: <span>{{finelPrice}}</span> ש"ח</p>
+      </h2>
+    </div>
+  </div>
+
+
+</div>

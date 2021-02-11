@@ -1,0 +1,18 @@
+textarea.form-control {
+    min-height: 100px;
+}
+.panel-primary>.panel-heading {
+    color: #98bfe0;
+    background-color: #8f8f8f;
+    border-color: #8f8f8f;
+}
+.panel-primary {
+    border-color: #8f8f8f;
+    margin-bottom: 2px;
+}
+label{
+    color: #81aed4
+}
+#errMsg{
+    color: red;
+}

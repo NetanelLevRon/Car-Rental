@@ -1,0 +1,278 @@
+#pCont{
+    word-break: unset;
+}
+
+p{
+    color: #337AB7;
+}
+#mainDiv{
+    width: 90%;
+    min-height: 350px;  
+    margin: auto;
+    display: flow-root;
+    border-bottom: solid 1px;
+    padding-top: inherit;
+}
+
+div{
+    padding-top: 5vh;
+    color: dimgray;
+}
+.card{
+    padding-top:none;
+    color:none;
+    width: 100%;
+}
+form input, select{
+    max-width: 100%;
+    min-width: 100%;
+    border-bottom: solid 0 gray;
+    border-width: 0 0 1px 0;
+    background-color: whitesmoke;
+    padding:  0 0 1px 0;
+    outline: none;
+    
+}
+p input, select{
+    max-width: 100%;
+    min-width: 100%;
+    border-bottom: solid 0 gray;
+    border-width: 0 0 1px 0;
+    background-color: whitesmoke;
+    padding:  0 0 1px 0;
+    outline: none;
+}
+input:active{
+    border-style: none;
+    border: 0px;
+}
+
+
+.bar-search{
+    display: block;
+    width: 20%;
+    padding: 10px 3vh;
+    float: left;
+    height: 100px;
+    margin: auto;
+}
+
+#btn{
+   float: right;
+
+}
+#btnInput{
+   padding: 3px 0 0 0;
+   border-width: 1px 1px 1px 1px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    appearance: none;  
+ }
+
+h3{
+text-align: center;
+margin: 40px 0 35px 0;
+font-style: italic;
+color: #337ab7;
+}
+
+/* ------------------------------------------------------- */
+
+.imgDiv{
+    height: 350px;
+    padding: 0;
+    overflow: auto;
+    margin: auto;
+    width: 90%;
+}
+.imgDiv div{
+    display: flex;
+    height: auto;
+    background-color: lightgray;
+    margin: 5px;
+    padding-top: inherit;
+    max-width: 100%;
+}
+.imgDiv #aInterst{
+    background-color: cornsilk;
+}
+.imgDiv img{
+    width: 100px;
+    margin-top: auto;
+    object-fit: contain;
+}
+.imgDiv p{
+    display: inline-block;
+    margin: 3px;
+    width: inherit;
+    line-height: 160%;
+    word-break: break-all;
+}
+
+.imgDiv #EditBtm{
+    margin-left: auto;
+    margin-right: 5px;
+   /* margin-top: inherit; */
+    margin-bottom: 15px; 
+    width: 15%;
+    height: 25%;
+    margin-top: auto;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.pAnswer{
+    float: right;
+    color: gray;
+}
+
+h4{
+    text-align: center;
+    color: lightsalmon;
+    
+}
+.editButn{
+    width: -webkit-fill-available;
+    margin-right: 5px;
+    height: 45%;
+    margin-top: 2px;
+}
+.twoBtn{
+    width: min-content;
+    margin-left: auto;
+    margin: 0px auto;
+    height: fit-content;
+}
+.pEdit input{
+    width: 100%;
+    line-height: normal;
+}
+.pEdit select{
+    width: 100%;
+    line-height: normal;
+}
+.errMsg{
+    color: red;
+    margin-bottom: 10px;
+    width: auto;
+}
+#imgInput{
+    width:100px;
+}
+#editImgSection{
+    max-width: 100px;
+    display: grid;
+}
+form{
+    display: contents;
+}
+#EddBtn{
+    height: 100%;
+    width: 99.4%;
+}
+#inputBtn{
+    width: max-content;
+}
+#actionMsgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+}
+/* ------------------------------------------------------- */
+
+@media screen and (max-width: 620px){
+    .editImgSection{
+        margin-right: -50px;
+    }
+    }
+
+ @media screen and (max-width: 1016px){
+
+    #mainDiv{
+        width: 90%;
+    }
+    .bar-search{
+        width: 50%;
+        padding: 10px 5vh;
+    }
+    #manfact{
+        min-width: 100%;
+    }
+
+    #btn{
+        display: contents;
+        margin-top: 35px;
+        float: right;
+        
+    }
+    .dates{
+        margin-top: 20px;
+    }
+} 
+
+@media screen and (max-width: 750px){
+
+ .card{
+        width: 100%;
+    }
+    p{
+        width: 40%;
+    }
+    #btnInput{
+        margin-top: 35px;
+    }
+    #dateS{
+        margin-top: 20px;
+    }
+    #dateE{
+        margin-top: 20px;
+    }
+
+    .errMsg{
+        margin-bottom: -35px;
+        width: auto;
+    }
+}
+@media screen and (max-width: 400px){
+    div{
+        max-width: 370px;
+    }
+    .imgDiv{
+        width: 100%;
+    }
+    div .card{
+        max-width: 100%;
+    }
+    .imgDiv div{
+        max-width: 100%;
+    }
+    .imgDiv p{
+        margin: none;
+        max-width: 21%;
+        word-break: unset;
+        width: 100%;
+    }
+    .pEdit{
+        min-width: 30%;
+    }
+    .pAnswer{
+        min-width: 30%;
+        overflow: hidden;
+    }
+    #pCont{
+        min-width: 21%;
+    }
+    .twoBtn{
+        width: min-content;
+        margin: 0px auto;
+        height: fit-content;
+    }
+    .editButn{
+        width: 50px;
+        margin-right: 0px;
+    }
+}

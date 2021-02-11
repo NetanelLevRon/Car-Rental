@@ -1,0 +1,95 @@
+div{
+    display: inherit;
+    min-height: 80px;
+}
+a{
+    color:#9ec2e0;
+}
+.logo{
+    max-height: 15%;
+    min-height: 15%;
+    min-width: 20%;
+    max-width: 45%;
+    float: right;
+    margin-right: 5px;
+    padding-top: 2%;
+}
+h3{
+    display: contents;
+   color: aliceblue;
+}
+img{
+    border-radius: 50%;
+    max-width: 50px;
+    margin-left: 20px;
+    opacity: none;
+}
+
+div ul{
+    max-width: 64%;
+    max-height: 15vh;
+    min-height: 15vh;
+    margin-bottom: 0px;
+    padding-top: 3%;
+    padding-left: 0px;
+}
+ul{
+    max-height: 60vh;
+    min-height: 15vh;
+}
+li{
+    list-style-type: none;
+    margin-left: 4vh;
+    float: left;
+    line-height: 25px;
+    font-size: 18px;
+}
+a{
+    display: block;
+}
+
+@media screen and (max-width: 660px) {
+    div ul{
+      float: none;
+      margin: auto;
+      display: block;
+      text-align: center;
+      padding:0 0 0 0;
+      min-width: 100%;
+      max-height: 60vh;
+    }
+    .logo{
+        float: none;
+        margin: auto;
+        text-align: center;
+        min-width: 100%;
+        max-height: 60vh;
+    }
+    li{
+        float: none;
+        margin: auto;
+        margin-left: 0%;
+    }
+  }
+
+  @media screen and (max-width: 245px) {
+      img{
+        margin: auto;
+      }
+  }
+
+  a:hover {
+    color:   #ddd;
+  }
+  a:active {
+    color: #ddd;
+  }
+  a:focus{
+      color:#ddd;
+  }
+  a:target{
+    color:#ddd;
+  }
+  a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}

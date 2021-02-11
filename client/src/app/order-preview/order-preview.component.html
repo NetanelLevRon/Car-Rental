@@ -1,0 +1,22 @@
+<div id="mainDiv">
+
+    <div id="leftDiv">
+  
+        <img *ngIf="!currentCar.Image" src="{{_imageService.defaultCarImg}}"/>
+        <img *ngIf="currentCar.Image" src="{{currentCar.Image}}"/>
+     
+    </div>
+  
+    <div id="rightDiv">
+  
+      <h3 id="firstH3">Manufacturer Name:<p>{{currentCar.ManufacturerName}}</p></h3>
+      <h3>Model:<p>{{currentCar.Model}}</p></h3>
+      <h3>Rental start date:<p>{{currentCar.Orders[0].RentalStart | date:'dd/MM/yyyy'}}</p></h3>
+      <h3>Rental end date:<p>{{currentCar.Orders[0].RentalEnd | date:'dd/MM/yyyy'}}</p></h3>
+      <h3 *ngIf="currentCar.Orders[0].ActualRentalEnd">Actual rental end date:
+          <p>{{currentCar.Orders[0].ActualRentalEnd | date:'dd/MM/yyyy'}}</p>
+      </h3>
+     
+    </div>
+  
+  </div>

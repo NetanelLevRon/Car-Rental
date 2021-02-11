@@ -1,0 +1,187 @@
+p{
+    color: #337AB7;
+}
+#mainDiv{
+    width: 90%;
+    min-height: 350px;  
+    margin: auto;
+    display: flow-root;
+    border-bottom: solid 1px;
+    padding-top: inherit;
+}
+
+div{
+    padding-top: 5vh;
+    color: dimgray;
+}
+.card{
+    width: 100%;
+    padding-top:none;
+    color:none;
+}
+input, select{
+    max-width: 100%;
+    min-width: 90%;
+    width: 100%;
+    border-bottom: solid 0 gray;
+    border-width: 0 0 1px 0;
+    background-color: whitesmoke;
+    padding:  0 0 1px 0;
+    outline: none;
+    
+}
+input:active{
+    border-style: none;
+    border: 0px;
+}
+.bar-search{
+    display: block;
+    width: 33%;
+    padding: 10px 3vh;
+    float: left;
+    height: 100px;
+    margin: auto;
+}
+#btn{
+   float: right;
+
+}
+#btnInput{
+   padding: 3px 0 0 0;
+   border-width: 1px 1px 1px 1px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    appearance: none;  
+ }
+
+h3{
+text-align: center;
+margin: 40px 0 35px 0;
+font-style: italic;
+color: #337ab7;
+}
+
+.imgDiv{
+    height: 350px;
+    padding: 0;
+    overflow: auto;
+    margin: auto;
+    width: 93%;
+}
+.imgDiv div{
+    display: flex;
+    height: auto;
+    background-color: lightgray;
+    margin: 5px;
+    padding-top: inherit;
+}
+.imgDiv #aInterst{
+    background-color: cornsilk;
+}
+.imgDiv img{
+    height: 100px;
+    width: 100px;
+}
+.imgDiv p{
+    display: inline-block;
+    margin: auto; 
+    height: 160%;
+    width: inherit;
+    min-width: 100px;
+    word-break: break-all;
+}
+
+.imgDiv .EditBtn{
+    margin-left: auto;
+    margin-right: 5px;
+    margin-bottom: 15px; 
+    width: 35%;
+    height: 25%;
+    margin-top: auto;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.pAnswer{
+    float: right;
+    color: gray;
+}
+
+h4{
+    text-align: center;
+    color: lightsalmon;
+    
+}
+.editButn{
+    width: -webkit-fill-available;
+    margin-right: 5px;
+    height: 45%;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.twoBtn{
+    width: min-content;
+    margin-left: auto;
+    height: fit-content;
+}
+.pEdit input{
+    line-height: normal;
+}
+.pEdit select{
+    line-height: normal;
+}
+.errMsg{
+    color: red;
+    margin-bottom: 10px;
+    width: auto;
+}
+#EddBtn{
+    height: 100%;
+    width: 99.4%;
+}
+form{
+    display: contents;
+}
+#actionMsgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+}
+
+    #mainDiv{
+        width: 90%;
+    }
+    .bar-search{
+        width: 50%;
+        padding: 10px 5vh;
+    }
+    #manfact{
+        min-width: 100%;
+    }
+    #btn{
+        display: contents;
+        margin-top: 35px;
+    }
+
+@media screen and (max-width: 750px){
+
+ .card{
+        width: 100%;
+    }
+    p{
+        width: 40%;
+    }
+    #btnInput{
+        margin-top: 35px;
+        min-width: 100%;
+    }
+
+    .errMsg{
+        margin-bottom: -35px;
+        width: auto;
+    }
+}

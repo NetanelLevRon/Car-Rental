@@ -1,0 +1,25 @@
+.container{
+    padding-top: 5vh;
+    min-width: 25vh;
+    max-width: 55vh;
+}
+.panel-heading{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.btn-default{
+    width: 100%;
+}
+.panel-primary>.panel-heading {
+    color: #98bfe0;
+    background-color: #8f8f8f;
+    border-color: #8f8f8f;
+}
+.panel-primary {
+    border-color: #8f8f8f;
+}
+label{
+    color: #81aed4
+}

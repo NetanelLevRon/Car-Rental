@@ -1,0 +1,29 @@
+<form class="container" #loginForm="ngForm" (ngSubmit)="OnSubmit(uname.value, Psww.value)">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Login</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label>
+                    <p>* </p>User name:
+                </label>
+                <input name="userName" type="text" #uname class="form-control" id="UName" placeholder="Enter user name"
+                    [(ngModel)]="userName" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <p>* </p>Password:
+                </label>
+                <input name="Password" #Psww type="password" class="form-control" id="psw" placeholder="Enter password"
+                    [(ngModel)]="password" required>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <button [disabled]="!loginForm.valid" title="All the fields need to be fill" type="submit"
+                class="btn btn-default">Login</button>
+        </div>
+    </div>
+
+</form>

@@ -1,0 +1,201 @@
+<form class="container" #carTypeSearchForm="ngForm" (ngSubmit)="filterCarTypes(carTypeSearchForm)">
+  <h3>Search Car Types For Edit</h3>
+  <div id="mainDiv">
+
+      
+        <div id="manfact" class="bar-search">
+        <label>Free text:</label>
+        <br /><br />
+        <input name="FreeText" type="Text" placeholder="Free text" [(ngModel)]="FreeText" />
+      </div>
+
+      <div class="bar-search">
+      <label>Day cost:</label>
+      <br /><br />
+      <input name="DayCost" type="Text" placeholder="Day cost" [(ngModel)]="DayCost">
+    </div>
+
+    <div class="bar-search">
+      <label>Day late cost:</label>
+      <br /><br />
+      <input name="DayLateCost" type="Text" placeholder="DayLateCost" [(ngModel)]="DayLateCost">
+    </div>
+
+    <div class="bar-search">
+      <label>Manufacturer name:</label>
+      <br /><br />
+      <input name="ManufacturerName" type="Text" placeholder="ManufacturerName" [(ngModel)]="ManufacturerName">
+    </div>
+
+    <div class="bar-search">
+      <label>Manufacturer year:</label>
+      <br /><br />
+      <input name="ManufacturerYear" type="Text" placeholder="ManufacturerYear" [(ngModel)]="ManufacturerYear">
+    </div>
+
+    <div class="bar-search">
+      <label>Model:</label>
+      <br /><br />
+      <input name="Model" type="Text" placeholder="Model" [(ngModel)]="Model">
+    </div>
+
+    <div class="bar-search">
+      <label>Transmission:</label>
+      <br /><br />
+      <select name="Transmission" [(ngModel)]="Transmission">
+        <option value="undefined"></option>
+        <option value="Manual">Manual</option>
+        <option value="Auto">Auto</option>
+      </select>
+    </div>
+
+    <div id="btn" class="bar-search">
+      <br /><br />
+      <input id="btnInput" type="submit" value="search">
+    </div>
+
+  </div>
+</form>
+
+
+
+
+
+<h3>CAR TYPES FOR EDIT</h3>
+<div>
+  <div *ngIf="!filtersCarTypes">
+
+    <div class="imgDiv">
+
+      <div class="card" *ngFor="let x of carTypes.carTypeList">
+
+        <p>Day cost:<br />Day late cost:<br />Manufacturer name:<br />Manufacturer
+          year:<br />Model<br />Transmission<br /></p>
+        <p *ngIf="!(carTypeId==x.CarTypeID)" class="pAnswer">
+          {{x.DayCost}}<br />{{x.DayLateCost}}<br />{{x.ManufacturerName}}<br />{{x.ManufacturerYear}}<br />{{x.Model}}<br />
+          {{x.Transmission == true? "Auto": "Manual"}}<br />
+        </p>
+
+        <div *ngIf="actionMsg && idForActionMsg == x.CarTypeID" id="actionMsgDiv">
+          {{actionMsg}}
+        </div>
+
+
+        <form #editForm="ngForm" (ngSubmit)="OnSubmit(x)">
+
+          <p *ngIf="carTypeId==x.CarTypeID" class="pEdit">
+
+            <span class="errMsg" *ngIf="dayCostErrMsg && idForErr == x.CarTypeID">{{dayCostErrMsg}}</span>
+            <input [(ngModel)]="dayCost" name="dayCost" #dC="ngModel" type="number" value="{{x.DayCost}}"><br />
+
+            <span class="errMsg" *ngIf="dayLateCostErrMsg && idForErr == x.CarTypeID">{{dayLateCostErrMsg}}</span>
+            <input type="number" value="{{x.DayLateCost}}" #dLC="ngModel" [(ngModel)]="dayLateCost"
+              name="dayLateCost"><br />
+
+            <span class="errMsg"
+              *ngIf="manufacturerNameErrMsg && idForErr == x.CarTypeID">{{manufacturerNameErrMsg}}</span>
+            <input type="text" value="{{x.ManufacturerName}}" #mnufName="ngModel" [(ngModel)]="manufacturerName"
+              name="manufacturerName"><br />
+
+            <span class="errMsg"
+              *ngIf="manufacturerYearErrMsg && idForErr == x.CarTypeID">{{manufacturerYearErrMsg}}</span>
+            <input type="number" value="{{x.ManufacturerYear}}" #mnufYear="ngModel" [(ngModel)]="manufacturerYear"
+              name="manufacturerYear"><br />
+
+            <span class="errMsg" *ngIf="modelErrMsg && idForErr == x.CarTypeID">{{modelErrMsg}}</span>
+            <input type="text" value="{{x.Model}}" #modl="ngModel" [(ngModel)]="model" name="model"><br />
+
+            <select [(ngModel)]="transmission" value="{{x.Transmission}}" name="transmission" #trn="ngModel">
+              <option value="true">Auto</option>
+              <option value="false">Manual</option>
+            </select>
+
+          </p>
+
+          <span class="twoBtn" *ngIf="!(carTypeId==x.CarTypeID)">
+            <button class="editButn" (click)="edit('editBtn', x)">Edit</button>
+            <button type="button" class="editButn" (click)="delete(x)">Delete</button>
+          </span>
+
+          <span class="twoBtn">
+            <button type="submit" *ngIf="carTypeId==x.CarTypeID" class="editButn">Save</button>
+            <button *ngIf="carTypeId==x.CarTypeID" class="editButn" (click)="edit('backBtn')">Back</button>
+          </span>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ------------------------- filterd carTypes --------------------- -->
+  <div *ngIf="filtersCarTypes">
+
+    <div class="imgDiv">
+
+      <div class="card" *ngFor="let x of filtersCarTypes.carTypeList">
+
+        <p>Day cost:<br />Day late cost:<br />Manufacturer name:<br />Manufacturer
+          year:<br />Model<br />Transmission<br /></p>
+        <p *ngIf="!(carTypeId==x.CarTypeID)" class="pAnswer">
+          {{x.DayCost}}<br />{{x.DayLateCost}}<br />{{x.ManufacturerName}}<br />{{x.ManufacturerYear}}<br />{{x.Model}}<br />
+          {{x.Transmission == true? "Auto": "Manual"}}<br />
+        </p>
+
+        <div *ngIf="actionMsg && idForActionMsg == x.CarTypeID" id="actionMsgDiv">
+          {{actionMsg}}
+        </div>
+
+
+        <form #editForm="ngForm" (ngSubmit)="OnSubmit(x)">
+
+          <p *ngIf="carTypeId==x.CarTypeID" class="pEdit">
+
+            <span class="errMsg" *ngIf="dayCostErrMsg && idForErr == x.CarTypeID">{{dayCostErrMsg}}</span>
+            <input [(ngModel)]="dayCost" name="dayCost" #dC="ngModel" type="number" value="{{x.DayCost}}"><br />
+
+            <span class="errMsg" *ngIf="dayLateCostErrMsg && idForErr == x.CarTypeID">{{dayLateCostErrMsg}}</span>
+            <input type="number" value="{{x.DayLateCost}}" #dLC="ngModel" [(ngModel)]="dayLateCost"
+              name="dayLateCost"><br />
+
+            <span class="errMsg"
+              *ngIf="manufacturerNameErrMsg && idForErr == x.CarTypeID">{{manufacturerNameErrMsg}}</span>
+            <input type="text" value="{{x.ManufacturerName}}" #mnufName="ngModel" [(ngModel)]="manufacturerName"
+              name="manufacturerName"><br />
+
+            <span class="errMsg"
+              *ngIf="manufacturerYearErrMsg && idForErr == x.CarTypeID">{{manufacturerYearErrMsg}}</span>
+            <input type="number" value="{{x.ManufacturerYear}}" #mnufYear="ngModel" [(ngModel)]="manufacturerYear"
+              name="manufacturerYear"><br />
+
+            <span class="errMsg" *ngIf="modelErrMsg && idForErr == x.CarTypeID">{{modelErrMsg}}</span>
+            <input type="text" value="{{x.Model}}" #modl="ngModel" [(ngModel)]="model" name="model"><br />
+
+            <select [(ngModel)]="transmission" value="{{x.Transmission}}" name="transmission" #trn="ngModel">
+              <option value="true">Auto</option>
+              <option value="false">Manual</option>
+            </select>
+
+          </p>
+
+          <span class="twoBtn" *ngIf="!(carTypeId==x.CarTypeID)">
+            <button class="editButn" (click)="edit('editBtn', x)">Edit</button>
+            <button type="button" class="editButn" (click)="delete(x)">Delete</button>
+          </span>
+
+          <span class="twoBtn">
+            <button type="submit" *ngIf="carTypeId==x.CarTypeID" class="editButn">Save</button>
+            <button *ngIf="carTypeId==x.CarTypeID" class="editButn" (click)="edit('backBtn')">Back</button>
+          </span>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+  
+</div>

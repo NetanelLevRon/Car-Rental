@@ -1,0 +1,63 @@
+<form class="container" #registerForm="ngForm" (ngSubmit)="OnSubmit(registerForm)">
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Register</h3>
+    </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <label for="FullName" data-error="Require field"><p>* </p>Full name:</label> <!-- לא עובד -->
+        <span class="errMsg" *ngIf="fullNameErrMsg">{{fullNameErrMsg}}</span>
+        <input class="validate" name="FullName" type="text" class="form-control" #FN="ngModel" placeholder="Enter full name" [(ngModel)]="FullName" required>
+      </div>
+      <div class="form-group">
+        <label><p>* </p>ID:</label>
+        <span class="errMsg" *ngIf="idErrMsg">{{idErrMsg}}</span>
+        <input name="ID" type="text" class="form-control" #identity="ngModel" placeholder="Enter identification number" [(ngModel)]="ID" required>
+      </div>
+      <div class="form-group">
+        <label><p>* </p>User name:</label>
+        <span class="errMsg" *ngIf="userNameErrMsg">{{userNameErrMsg}}</span>
+        <input name="UserName" type="text" class="form-control" #UN="ngModel" placeholder="Enter user name" [(ngModel)]="UserName" required>
+      </div>
+      <div class="form-group">
+        <label>Birth date:</label>
+        <input name="BirthDate" type="date" class="form-control" #Dte="ngModel" placeholder="Enter birth date" [(ngModel)]="BirthDate">
+      </div>
+      <div class="form-group">
+        <label><p>* </p>Gender:</label>
+        <div class="form-control">
+          <label>
+            <input #Gnder="ngModel" type="radio" name="Gender" value="True" [(ngModel)]="Gender" required>Mail
+          </label>
+          <label>
+            <input #Gnder="ngModel" type="radio" name="Gender" value="False" [(ngModel)]="Gender" required>Female
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label><p>* </p>Email:</label>
+        <span class="errMsg" *ngIf="emailErrMsg">{{emailErrMsg}}</span>
+        <input name="Email" type="email" class="form-control" #mail="ngModel" placeholder="Enter email" [(ngModel)]="Email" required>
+      </div>
+      <div class="form-group">
+        <label><p>* </p>Password:</label>
+        <span class="errMsg" *ngIf="passwordErrMsg">{{passwordErrMsg}}</span>
+        <input name="Password" type="password" class="form-control" #Psw="ngModel" placeholder="Enter password" [(ngModel)]="Password"
+          required>
+      </div>
+      <div class="form-group">
+        <label>Image:</label>
+        <div class="form-control">
+          <!-- accept -> only images -->
+          <input name="Image" type="file" #Img="ngModel" accept="image/*"  
+          (change)="handleFileInput($event.target.files)" [(ngModel)]="Image">
+        </div>
+        <img *ngIf="imageUrl" [src]="imageUrl" style="width:250px;height:200px;display:block;">
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button title="All the red asterisk marked fields need to be fill" [disabled]="!registerForm.valid" type="submit" class="btn btn-default">submit</button>
+    </div>
+  </div>
+</form>

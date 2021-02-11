@@ -1,0 +1,202 @@
+<form class="container" #carStoreSearchForm="ngForm" (ngSubmit)="filterCars(carStoreSearchForm)">
+  <h3>Search Cars For Edit</h3>
+  <div id="mainDiv">
+    
+        <div id="manfact" class="bar-search">
+        <label>Free text:</label>
+        <br /><br />
+        <input name="FreeText" type="Text" placeholder="Free text" [(ngModel)]="FreeText" />
+      </div>
+
+      <div class="bar-search">
+      <label>Mileage:</label>
+      <br /><br />
+      <input name="CurrentMileage" type="Text" placeholder="Current Mileage" [(ngModel)]="CurrentMileage">
+    </div>
+
+    <div class="bar-search">
+      <label>Plate num:</label>
+      <br /><br />
+      <input name="LicensePlate" type="Text" placeholder="License Plate" [(ngModel)]="LicensePlate">
+    </div>
+    
+    <div class="bar-search">
+      <label>Branch:</label>
+      <br /><br />
+      <select name="Branch" [(ngModel)]="Branch">
+        <option value="undefined"></option>
+        <option value="2">Center branch</option>
+        <option value="3">North branch</option>
+      </select>
+    </div>
+
+    <div class="bar-search">
+      <label>Proper?:</label>
+      <br /><br />
+      <select name="IsProper" [(ngModel)]="IsProper">
+        <option value="undefined"></option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </div>
+
+    <div class="bar-search">
+      <label>Available?:</label>
+      <br /><br />
+      <select name="IsAvailable" [(ngModel)]="IsAvailable">
+        <option value="undefined"></option>
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+    </div>
+
+    <div id="btn" class="bar-search">
+      <br /><br />
+      <input id="btnInput" type="submit" value="search">
+    </div>
+
+  </div>
+</form>
+
+
+<h3>CARS FOR EDIT</h3>
+<div>
+  <div *ngIf="!filtersCars">
+
+    <div class="imgDiv">
+
+      <div class="card" *ngFor="let x of cars.carList">
+
+        <img *ngIf="!(carId==x.CarID)" src="{{x.Image}}" />
+
+        <div class="editImgSection" *ngIf="carId==x.CarID">
+
+          <input id="imgInput" name="image" type="file" #Img="ngModel" accept="image/*"
+            (change)="handleFileInput($event.target.files)" [(ngModel)]="image">
+
+          <img *ngIf="!imageUrl" [src]="x.Image"> 
+          <img *ngIf="imageUrl" [src]="imageUrl"> 
+        </div>
+
+        <p id="pCont">Current Mileage:<br />Is Available?:<br />Is Proper?:<br />License Plate:<br />Branch:<br /></p>
+        <p *ngIf="!(carId==x.CarID)" class="pAnswer">
+          {{x.CurrentMileage}}<br />{{x.IsAvailable? "yes": "no"}}<br />{{x.IsProper? "yes": "no"}}<br />
+          {{x.LicensePlate}}<br /><span *ngIf="x.BranchID=='2'">Center branch</span>
+          <span *ngIf="x.BranchID=='3'">North branch</span><br />
+        </p>
+
+        <div *ngIf="actionMsg && idForActionMsg == x.CarID" id="actionMsgDiv">
+          {{actionMsg}}
+        </div>
+
+        <form #editForm="ngForm" (ngSubmit)="OnSubmit(x)">
+
+          <p *ngIf="carId==x.CarID" class="pEdit">
+            <span class="errMsg" *ngIf="mileageErrMsg && idForErr == x.CarID">{{mileageErrMsg}}</span>
+            <input type="number" value="{{x.CurrentMileage}}" #mil="ngModel" [(ngModel)]="mileage" name="mileage"><br />
+            <select [(ngModel)]="avalabile" value="{{x.IsAvailable}}" #avail="ngModel" name="avalabile">
+              <option value="true">yes</option>
+              <option value="false">no</option>
+            </select>
+            <select [(ngModel)]="proper" #prop="ngModel" value="{{x.IsProper}}" name="proper">
+              <option value="true">yes</option>
+              <option value="false">no</option>
+            </select>
+            <span class="errMsg" *ngIf="licensErrMsg && idForErr == x.CarID">{{licensErrMsg}}</span>
+            <br /><input [(ngModel)]="license" name="license" #lic="ngModel" type="text"
+              value="{{x.LicensePlate}}"><br />
+              <select id="branchSelectId" [(ngModel)]="branch" #brn="ngModel" value="{{x.BranchID}}"
+               name="branch">
+                <option value="2">Center branch</option>
+                <option value="3">North branch</option>
+              </select>
+          </p>
+
+          <span class="twoBtn" *ngIf="!(carId==x.CarID)">
+          <button class="editButn" (click)="edit('editBtn', x)" >Edit</button>
+            <button type="button" class="editButn" (click)="delete(x)">Delete</button> 
+            </span>
+
+          <span class="twoBtn">
+            <button type="submit" *ngIf="carId==x.CarID" class="editButn">Save</button>
+            <button *ngIf="carId==x.CarID" class="editButn" (click)="edit('backBtn')">Back</button>
+          </span>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- --------------------------------------- after filterd ------------------------------------------------------- -->
+
+  <div *ngIf="filtersCars">
+
+    <div class="imgDiv">
+
+      <div class="card" *ngFor="let x of filtersCars.carList">
+
+        <img *ngIf="!(carId==x.CarID)" src="{{x.Image}}" />
+
+        <div class="editImgSection" *ngIf="carId==x.CarID">
+
+          <input id="imgInput" name="image" type="file" #Img="ngModel" accept="image/*"
+            (change)="handleFileInput($event.target.files)" [(ngModel)]="image">
+
+          <img *ngIf="!imageUrl" [src]="x.Image">
+          <img *ngIf="imageUrl" [src]="imageUrl">
+        </div>
+
+        <p id="pCont">Current Mileage:<br />Is Available?:<br />Is Proper?:<br />License Plate:<br />Branch:<br /></p>
+        <p *ngIf="!(carId==x.CarID)" class="pAnswer">
+          {{x.CurrentMileage}}<br />{{x.IsAvailable? "yes": "no"}}<br />{{x.IsProper? "yes": "no"}}<br />
+          {{x.LicensePlate}}<br /><span *ngIf="x.BranchID=='2'">Center branch</span>
+          <span *ngIf="x.BranchID=='3'">North branch</span><br />
+        </p>
+
+        <div *ngIf="actionMsg && idForActionMsg == x.CarID" id="actionMsgDiv">
+          {{actionMsg}}
+        </div>
+
+        <form #editForm="ngForm" (ngSubmit)="OnSubmit(x)">
+
+          <p *ngIf="carId==x.CarID" class="pEdit">
+            <span class="errMsg" *ngIf="mileageErrMsg && idForErr == x.CarID">{{mileageErrMsg}}</span>
+            <input type="number" value="{{x.CurrentMileage}}" #mil="ngModel" [(ngModel)]="mileage" name="mileage"><br />
+            <select [(ngModel)]="avalabile" value="{{x.IsAvailable}}" #avail="ngModel" name="avalabile">
+              <option value="true">yes</option>
+              <option value="false">no</option>
+            </select>
+            <select [(ngModel)]="proper" #prop="ngModel" value="{{x.IsProper}}" name="proper">
+              <option value="true">yes</option>
+              <option value="false">no</option>
+            </select>
+            <span class="errMsg" *ngIf="licensErrMsg && idForErr == x.CarID">{{licensErrMsg}}</span>
+            <br /><input [(ngModel)]="license" name="license" #lic="ngModel" type="text"
+              value="{{x.LicensePlate}}"><br />
+              <select id="branchSelectId" [(ngModel)]="branch" #brn="ngModel" value="{{x.BranchID}}"
+               name="branch">
+                <option value="2">Center branch</option>
+                <option value="3">North branch</option>
+              </select>
+          </p>
+
+          <span class="twoBtn" *ngIf="!(carId==x.CarID)">
+          <button class="editButn" (click)="edit('editBtn', x)" >Edit</button> 
+            <button type="button" class="editButn" (click)="delete(x)">Delete</button>
+            </span>
+       
+          <span class="twoBtn">
+            <button type="submit" *ngIf="carId==x.CarID" class="editButn">Save</button>
+            <button *ngIf="carId==x.CarID" class="editButn" (click)="edit('backBtn')">Back</button>
+          </span>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

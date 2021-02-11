@@ -1,0 +1,134 @@
+#mainDiv{
+    width: 90%;
+   height: 100%;
+   padding-top: 15px;
+   margin: auto;
+}
+p{
+    font-size: 15px;
+    display: inline-block;
+    color: cornflowerblue;
+    margin-left: 5px;
+    float: right;
+    margin-right: 3px;
+}
+#fPPId{
+    margin-right: 20%;
+}
+#msgDiv{
+    display: flex;
+    width: 90%;
+    height: 150px;
+    border: solid 1px;
+    align-items: center;
+    justify-content: center;
+}
+#firstH4{
+    margin-top: 0px;
+}
+#rightDiv{
+    width: 45%;
+    height: 45%;
+    float: right;
+    text-align: left;
+    
+}
+#leftDiv{
+    width: 45%;
+    height: 45%;
+    float: left;
+    padding-bottom: 15px;
+}
+input{
+    width: 98%;
+    border-bottom: solid 0 gray;
+    border-width: 0 0 1px 0;
+    background-color: whitesmoke;
+    padding:  0 0 1px 0;
+    outline: none;
+}
+#finlePriceId{
+    width: 30%;
+    height: auto;
+    min-height: 100px;
+    float: left;
+    border: solid 1px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: grid;
+}
+#btnR{
+  margin-top: 5px;
+  width: 98%;
+}
+#botomDiv{
+    height: 130px;
+    width: 68%;
+    float: right;
+}
+.btnL{
+    width: 90%;
+    margin-top: 10px;
+}
+h2{
+    width: 100%;
+    text-align: center;
+}
+h5{
+    margin-left: auto;
+    margin-right: auto;
+}
+.errMsg{
+    color: red;
+}
+span{
+        color: gray;
+}
+#datesDiv{
+        text-align: end;
+        display: inline-block;
+}
+
+/* --------------------------------------------------- */
+
+@media screen and (max-width: 660px){
+
+    #msgDiv{
+        width: 90%;
+    }
+    .btnL{
+        width: 90%;
+        margin-left: unset;
+    }
+    #finlePriceId{
+        width: 90%;
+        height: auto;
+        border: solid 1px;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+    #btnR{
+      margin: 5px 0 5px 0;
+      width: 100%;
+    }
+    #botomDiv{
+        width: 90%;
+        float: left;
+    }
+    input {
+        width: 98%;
+    }
+    p{
+        float: right;
+        margin-top: 4px;
+        display: contents;
+    }
+}

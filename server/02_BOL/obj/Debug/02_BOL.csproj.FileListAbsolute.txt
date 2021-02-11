@@ -1,0 +1,21 @@
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\02_BOL\bin\Debug\02_BOL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\02_BOL\bin\Debug\02_BOL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\02_BOL\obj\Debug\02_BOL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\02_BOL\obj\Debug\02_BOL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\02_BOL\obj\Debug\02_BOL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\02_BOL\obj\Debug\02_BOL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\02_BOL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\02_BOL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\obj\Debug\02_BOL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\obj\Debug\02_BOL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\obj\Debug\02_BOL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\obj\Debug\02_BOL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\02_BOL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\02_BOL\obj\Debug\02_BOL.csproj.CopyComplete

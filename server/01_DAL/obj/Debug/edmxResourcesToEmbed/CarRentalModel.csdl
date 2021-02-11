@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarRentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="BranchID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Latitude" Type="Decimal" Precision="12" Scale="8" />
+    <Property Name="Longitude" Type="Decimal" Precision="12" Scale="8" />
+    <Property Name="branchName" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Cars" Relationship="Self.FK_ToBranchs" FromRole="Branchs" ToRole="Cars" />
+  </EntityType>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Name="CarID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CarTypeID" Type="Int32" Nullable="false" />
+    <Property Name="CurrentMileage" Type="Int32" Nullable="false" />
+    <Property Name="IsProper" Type="Boolean" Nullable="false" />
+    <Property Name="IsAvailable" Type="Boolean" Nullable="false" />
+    <Property Name="LicensePlate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BranchID" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Branch" Relationship="Self.FK_ToBranchs" FromRole="Cars" ToRole="Branchs" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_ToCars" FromRole="Cars" ToRole="Orders" />
+    <NavigationProperty Name="CarType" Relationship="Self.FK_ToCarTypes" FromRole="Cars" ToRole="CarTypes" />
+  </EntityType>
+  <EntityType Name="CarType">
+    <Key>
+      <PropertyRef Name="CarTypeID" />
+    </Key>
+    <Property Name="CarTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ManufacturerName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="model" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DayCost" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DayLateCost" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ManufacturerYear" Type="Int32" Nullable="false" />
+    <Property Name="Transmission" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Cars" Relationship="Self.FK_ToCarTypes" FromRole="CarTypes" ToRole="Cars" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RentalStart" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="RentalEnd" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="CarID" Type="Int32" Nullable="false" />
+    <Property Name="ActualRentalEnd" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Car" Relationship="Self.FK_ToCars" FromRole="Orders" ToRole="Cars" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ToUsers" FromRole="Orders" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BirthDate" Type="DateTime" Precision="0" />
+    <Property Name="Gender" Type="Boolean" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserRole" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_ToUsers" FromRole="Users" ToRole="Orders" />
+  </EntityType>
+  <Association Name="FK_ToBranchs">
+    <End Role="Branchs" Type="Self.Branch" Multiplicity="1" />
+    <End Role="Cars" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branchs">
+        <PropertyRef Name="BranchID" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="BranchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ToCars">
+    <End Role="Cars" Type="Self.Car" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="CarID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ToCarTypes">
+    <End Role="CarTypes" Type="Self.CarType" Multiplicity="1" />
+    <End Role="Cars" Type="Self.Car" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarTypes">
+        <PropertyRef Name="CarTypeID" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="CarTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ToUsers">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CarRentalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Branchs" EntityType="Self.Branch" />
+    <EntitySet Name="Cars" EntityType="Self.Car" />
+    <EntitySet Name="CarTypes" EntityType="Self.CarType" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <AssociationSet Name="FK_ToBranchs" Association="Self.FK_ToBranchs">
+      <End Role="Branchs" EntitySet="Branchs" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ToCars" Association="Self.FK_ToCars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ToCarTypes" Association="Self.FK_ToCarTypes">
+      <End Role="CarTypes" EntitySet="CarTypes" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ToUsers" Association="Self.FK_ToUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <FunctionImport Name="InsertBranch">
+      <Parameter Name="FAddress" Mode="In" Type="String" />
+      <Parameter Name="Latitude" Mode="In" Type="Int32" />
+      <Parameter Name="Longitude" Mode="In" Type="Int32" />
+      <Parameter Name="branchName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+<div id="mainDiv">
+  <div id="leftDiv">
+
+<p *ngIf="callbackMsg">{{callbackMsg}} finle cost: {{finelPrice}} ש"ח</p>
+<p *ngIf="!callbackMsg">finel cost</p>
+  </div>
+
+  <div id="rightDiv">
+
+    <p id="errMsg" *ngIf="errMsg">{{errMsg}}</p>
+    <input type="text"  [(ngModel)]="carLicense" placeholder="car-number"><br/><br/>
+  <button (click)="getCarByLicense()">RETURN-CAR</button> 
+</div>
+
+</div>

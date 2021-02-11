@@ -1,0 +1,42 @@
+.container{
+    padding-top: 5vh;
+    min-width: 25vh;
+    max-width: 55vh;
+}
+.panel-title{
+    text-align: center;
+}
+p{
+    color: red;
+    display: inline;
+}
+h1{
+    text-align: center;
+}
+input.ng-invalid.ng-dirty{
+    border-bottom-color: red !important;
+    box-shadow: 0 1px 0 0 red !important;
+}
+.errMsg{
+    color: red;
+    display: block;
+}
+.panel-primary>.panel-heading {
+    color: #98bfe0;
+    background-color: #8f8f8f;
+    border-color: #8f8f8f;
+}
+.panel-primary {
+    border-color: #8f8f8f;
+}
+label{
+    color: #81aed4
+}
+
+@media screen and (max-width: 670px){
+    .container{
+        padding-top: 5vh;
+        min-width: 25vh;
+        max-width: 75vh;
+    }
+}

@@ -1,0 +1,27 @@
+<header>
+  <div id="mainDiv">
+
+  <div class="logo">
+        <h3 *ngIf="selectedUser.UserRole == 'guest'">Hello {{selectedUser.UserRole}}</h3>
+        <h3 *ngIf="selectedUser.UserRole != 'guest'">Hello {{selectedUser.UserName}}</h3>
+        <img src="{{selectedUser.Image}}" />
+      </div>
+        <div>
+          <ul>
+            <li><a routerLink="/home">Home</a></li>
+            <li *ngIf="selectedUser.UserRole=='guest'|| selectedUser.UserRole=='customer'"><a (click)="enableCarsPreview()" routerLink="/cars">Cars</a></li>    
+            <li *ngIf="selectedUser.UserRole=='guest'"><a routerLink="/login">Login</a></li>
+            <li *ngIf="selectedUser.UserRole=='guest'"><a routerLink="/register">Register</a></li>
+            <li *ngIf="selectedUser.UserRole=='customer'|| selectedUser.UserRole=='employee' || selectedUser.UserRole=='admin'"><a routerLink="/logout">Logout</a></li>
+            <li *ngIf="selectedUser.UserRole=='customer'"><a routerLink="/my-orders">My-Orders</a></li>
+            <li *ngIf="selectedUser.UserRole=='employee'"><a routerLink="/car-return">Return-Car</a></li>
+
+            <li *ngIf="selectedUser.UserRole=='admin'"><a routerLink="/car-store">Car-Store</a></li>
+            <li *ngIf="selectedUser.UserRole=='admin'"><a routerLink="/car-type">Car-Type</a></li>
+            <li *ngIf="selectedUser.UserRole=='admin'"><a routerLink="/orders">Orders</a></li>
+            <li *ngIf="selectedUser.UserRole=='admin'"><a routerLink="/users">Users</a></li>
+          </ul>
+        </div>
+
+      </div>
+      </header>

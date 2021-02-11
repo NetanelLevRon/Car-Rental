@@ -1,0 +1,24 @@
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\obj\Debug\01_DAL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\obj\Debug\01_DAL.csproj.CopyComplete
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\obj\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\obj\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\01_DAL\obj\Debug\01_DAL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\EntityFramework.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\EntityFramework.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\obj\Debug\01_DAL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\obj\Debug\01_DAL.csproj.CopyComplete
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\obj\Debug\01_DAL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\obj\Debug\01_DAL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\01_DAL\obj\Debug\01_DAL.csprojAssemblyReference.cache

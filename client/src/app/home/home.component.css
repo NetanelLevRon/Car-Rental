@@ -1,0 +1,52 @@
+#mainDiv{
+   margin: 0;
+   padding: 10px 0 5px 0;
+}
+h2{
+    text-align: center;
+    color: gray;
+    margin: 0;
+}
+#logo{
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#store{
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+}
+h3{
+    text-align: center;
+    color: gray;
+    margin: auto;
+    width: 90%;
+   
+}
+p{
+    font-style: italic;
+    padding-top: 10px;
+}
+#firstLine{
+    display: inline;
+}
+#about{
+    text-decoration-line: underline;
+    text-align: left;
+    padding: 5px 0 15px 10px;
+}
+#enjoy{
+    text-align:right;
+    padding-right:30px;
+    margin-top: 30px;
+}

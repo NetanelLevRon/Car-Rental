@@ -1,0 +1,110 @@
+<form class="container" #carSearchForm="ngForm" (ngSubmit)="OnSubmit(carSearchForm)">
+  <div id="mainDiv">
+    <div id="manfact" class="bar-search">
+      <label>Manufacturer:</label>
+      <br /><br />
+      <input name="ManufacturerName" type="Text" placeholder="Manufacturer" [(ngModel)]="ManufacturerName">
+    </div>
+
+    <div class="bar-search">
+      <label>Model:</label>
+      <br /><br />
+      <input name="Model" type="Text" placeholder="Model" [(ngModel)]="Model">
+    </div>
+
+    <div class="bar-search">
+      <label>Year:</label>
+      <br /><br />
+      <input name="ManufacturerYear" type="number" placeholder="Year" [(ngModel)]="ManufacturerYear">
+    </div>
+
+    <div class="bar-search">
+      <label>Transmission:</label>
+      <br /><br />
+      <select name="Transmission" [(ngModel)]="Transmission">
+        <option value="undefined"></option>
+        <option value="Manual">Manual</option>
+        <option value="Auto">Auto</option>
+      </select>
+    </div>
+
+    <div id="freeText" class="bar-search">
+      <label>Free text:</label>
+      <br /><br />
+      <input name="FreeText" type="Text" placeholder="Free text" [(ngModel)]="FreeText" />
+    </div>
+
+    <div class="bar-search">
+      <label>Date start (valid dates):</label>
+      <p class="errMsg" *ngIf="inCorrectFdtMsg">{{inCorrectFdtMsg}}</p>
+      <br />
+      <input name="rentalStart" (change)="dateValidation()" id="dateS" type="Date" [(ngModel)]="rentalStart" />
+    </div>
+
+    <div class="bar-search">
+      <label>Date end (valid dates):</label>
+      <p class="errMsg" *ngIf="inCorrectSdtMsg">{{inCorrectSdtMsg}}</p>
+      <br />
+      <input name="rentalEnd" type="Date" id="dateE" (change)="dateValidation()" [(ngModel)]="rentalEnd">
+    </div>
+
+    <div id="btn" class="bar-search">
+      <br /><br />
+      <input id="btnInput" type="submit" value="search" routerLink="/cars" (click)="deActivateRouter()">
+    </div>
+
+  </div>
+</form>
+
+<h3>AVAILABLE CARS</h3>
+
+<div *ngIf="!fullCarInfo.fullCarList[0]" class="col-md-3"> <!-- loading icon while waiting the cars from server -->
+     <div class="adjust">
+        <div class="loader2"></div>
+     </div>
+</div>
+
+  <div>
+    <router-outlet>
+    <div *ngIf="!filtersCars && !_fullCarService.isInChildView" class="imgDiv">
+      <!-- before search -->
+
+      <a *ngFor="let x of fullCarInfo.fullCarList" (click)="pastCurrentCar(x)" (click)="setCarsToLocalStorage(x)"
+        routerLink="/cars/car-details"><img src="{{x.Image}}" />
+        <p>Manufacturer:<br />Model:<br />Year:<br />Transmission:<br /></p>
+        <p class="pAnswer">
+          {{x.ManufacturerName}}<br />{{x.Model}}<br />{{x.ManufacturerYear}}<br />{{x.Transmission == true? "Auto": "Manual"}}<br />
+        </p>
+      </a>
+
+    </div>
+
+
+    <div *ngIf="filtersCars && !_fullCarService.isInChildView" class="imgDiv">
+      <!-- after search -->
+
+      <a *ngFor="let x of filtersCars.fullCarList" (click)="pastCurrentCar(x)" (click)="setCarsToLocalStorage(x)"
+        routerLink="/cars/car-details"><img src="{{x.Image}}" />
+        <p>Manufacturer:<br />Model:<br />Year:<br />Transmission:<br /></p>
+        <p class="pAnswer">
+          {{x.ManufacturerName}}<br />{{x.Model}}<br />{{x.ManufacturerYear}}<br />{{x.Transmission == true? "Auto": "Manual"}}<br />
+        </p>
+      </a>
+
+    </div>
+  </router-outlet>
+</div>
+
+
+<div class="imgDiv" *ngIf="carsUserInterested.fullCarList[0]">
+  <h4>CARS YOU INTERSTING</h4>
+  <div *ngIf="carsUserInterested.fullCarList" >
+
+    <a id="aInterst" *ngFor="let x of carsUserInterested.fullCarList"><img src="{{x.Image}}" />
+      <p>Manufacturer:<br />Model:<br />Year:<br />Transmission:<br /></p>
+      <p class="pAnswer">
+        {{x.ManufacturerName}}<br />{{x.Model}}<br />{{x.ManufacturerYear}}<br />{{x.Transmission == true? "Auto": "Manual"}}<br />
+      </p>
+    </a>
+  </div>
+</div>

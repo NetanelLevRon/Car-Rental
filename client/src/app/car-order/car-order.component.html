@@ -1,0 +1,61 @@
+<div id="mainDiv">
+
+  <div id="leftDiv">
+
+    <div id="msgDiv">{{actionMsg}}
+      <p *ngIf="actionMsgForUpdateCar">{{actionMsgForUpdateCar}}</p>
+    </div>
+
+
+    <button [disabled]="!priceValid.valid" class="btnL" (click)="makeOrder()">Order Now</button>
+    <button class="btnL" routerLink="/cars" (click) = "deActivateRouter()">Back to catalog</button>
+
+    <div id="datesDiv" *ngIf="allOpenOrders.orderList">
+      <div *ngIf="allOpenOrders.orderList[0]">
+        <h4>Not available dates:</h4>
+        <div *ngFor="let x of allOpenOrders.orderList">
+          <p>{{x.RentalStart | date:'dd/MM/yyyy'}} - {{x.RentalEnd | date:'dd/MM/yyyy'}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="rightDiv">
+
+    <h4 id="firstH4">Manufacturer Name:<p>{{currentCar.ManufacturerName}}</p>
+    </h4>
+    <h4>Model:<p>{{currentCar.Model}}</p>
+    </h4>
+    <h4>Cost per day:<p>{{currentCar.DayCost}}</p>
+    </h4>
+    <h4>Cost per day late:<p>{{currentCar.DayLateCost}}</p>
+    </h4>
+    <div id="botomDiv">
+      <form #priceValid="ngForm" (ngSubmit)="OnSubmit(priceValid)">
+        <label>date of rental start:</label><br />
+        <p class="errMsg" *ngIf="inCorrectFdtMsg">{{inCorrectFdtMsg}}</p>
+        <p class="errMsg" *ngIf="inValidOrderFdMsg">{{inValidOrderFdMsg}}</p>
+        <input type="date" [(ngModel)]="rentalStart" (change)="dateValidation()" name="rentalStart" required><br />
+        <label>date of rental end:</label><br />
+        <p class="errMsg" *ngIf="inCorrectSdtMsg">{{inCorrectSdtMsg}}</p>
+        <p class="errMsg" *ngIf="inValidOrderSdMsg">{{inValidOrderSdMsg}}</p>
+        <input type="date" [(ngModel)]="rentalEnd" (change)="dateValidation()" name="rentalEnd" required>
+      </form>
+
+    </div>
+
+    <div id="finlePriceId">
+      <div>
+        <h5>{{finlePriceEndDayLate}} <p *ngIf="finelPrice" id="fPPId">{{finelPrice}} שח</p>
+        </h5>
+      </div>
+      <div>
+        <h5>Every day late: <p *ngIf="dayLateCost" id="fPPId">{{dayLateCost}} שח</p>
+        </h5>
+      </div>
+    </div>
+  </div>
+
+
+</div>

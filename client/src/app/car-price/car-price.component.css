@@ -1,0 +1,124 @@
+#mainDiv{
+    width: 90%;
+   height: 100%;
+   padding-top: 15px;
+   margin: auto;
+}
+p{
+    font-size: 15px;
+    display: inline-block;
+    color: cornflowerblue;
+    margin-left: 5px;
+    float: right;
+    margin-right: 3px;
+}
+#pPrice{
+    float: inherit;
+    font-size: 25px;
+}
+img{
+    width: 90%;
+    height: 45%;
+}
+#firstH4{
+    margin-top: 0px;
+}
+#rightDiv{
+    width: 45%;
+    height: 45%;
+    float: right;
+    text-align: left;
+    padding-bottom: 15px;
+    
+}
+#leftDiv{
+    width: 45%;
+    float: left;
+    padding-bottom: 15px;
+}
+input{
+    width: 98%;
+    border-bottom: solid 0 gray;
+    border-width: 0 0 1px 0;
+    background-color: whitesmoke;
+    padding:  0 0 1px 0;
+    outline: none;
+}
+#finlePriceId{
+    width: 30%;
+    height: 130px;
+    float: left;
+    border: solid 1px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#btnR{
+  margin-top: 5px;
+  width: 98%;
+}
+#botomDiv{
+    height: 130px;
+    width: 68%;
+    float: right;
+}
+.btnL{
+    width: 90%;
+    margin-top: 10px;
+}
+h2{
+    width: 100%;
+    text-align: center;
+}
+.errMsg{
+color: red;
+}
+span{
+    color: gray;
+}
+#datesDiv{
+    text-align: end;
+    display: inline-block;
+}
+
+/* --------------------------------------------------- */
+
+@media screen and (max-width: 660px){
+    img{
+        width: 90%;
+    }
+    .btnL{
+        width: 90%;
+        margin-left: unset;
+    }
+    #finlePriceId{
+        width: 90%;
+        height: auto;
+        border: solid 1px;
+        margin: 5px auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 5px;;
+    }
+    h2{
+        width: 100%;
+        text-align: center;
+    }
+    #btnR{
+      margin: 5px 0 5px 0;
+      width: 100%;
+    }
+    #botomDiv{
+        width: 90%;
+        float: left;
+        height: auto;
+    }
+    input {
+        width: 98%;
+    }
+    p{
+        display: contents;
+    }
+}

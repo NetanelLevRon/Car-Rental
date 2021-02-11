@@ -1,0 +1,25 @@
+ <h3>Order History</h3>
+
+  <div *ngIf="pastOrders[0]">  
+    <h4>Past & Present Orders</h4>
+    <div class="imgDiv">
+      <a *ngFor="let x of pastOrders"  (click)="pastCurrentCar(x)" routerLink="/my-orders/order-preview"><img src="{{x.Image}}" />
+        <p>Manufacturer:<br />Model:<br />RentalStart:<br />RentalEnd:<br /></p>
+        <p class="pAnswer">
+        {{x.ManufacturerName}}<br />{{x.Model}}<br />{{x.Orders[0].RentalStart | date:'dd/MM/yyyy'}}<br />{{x.Orders[0].RentalEnd | date:'dd/MM/yyyy'}}<br />
+        </p>
+      </a>
+    </div>
+    </div>
+
+    <div *ngIf="futureOrders[0]">  
+      <h4>Future Orders</h4>
+      <div class="imgDiv" >
+        <a *ngFor="let x of futureOrders"  (click)="pastCurrentCar(x)" routerLink="/my-orders/order-preview"><img src="{{x.Image}}" />
+          <p>Manufacturer:<br />Model:<br />RentalStart:<br />RentalEnd:<br /></p>
+          <p class="pAnswer">
+           {{x.DayCost}} {{x.ManufacturerName}}<br />{{x.Model}}<br />{{x.Orders[0].RentalStart | date:'dd/MM/yyyy'}}<br />{{x.Orders[0].RentalEnd | date:'dd/MM/yyyy'}}<br />
+          </p>
+        </a>
+      </div>
+      </div>

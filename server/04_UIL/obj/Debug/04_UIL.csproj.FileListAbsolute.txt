@@ -1,0 +1,163 @@
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\obj\Debug\04_UIL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\obj\Debug\04_UIL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\04_UIL.dll.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\04_UIL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\04_UIL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\csc.exe
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\csc.exe.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\csc.rsp
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\csi.exe
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\csi.exe.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\csi.rsp
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.AppContext.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Console.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.IO.Compression.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.IO.Pipes.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.Claims.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Threading.Thread.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.ValueTuple.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Xml.XPath.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\vbc.exe
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\vbc.exe.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\vbc.rsp
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\VBCSCompiler.exe
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\02_BOL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\03_BLL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\EntityFramework.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Net.Http.Formatting.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Http.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Http.WebHost.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\01_DAL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\02_BOL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\03_BLL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\03_BLL.dll.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\EntityFramework.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Net.Http.Formatting.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Http.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Http.WebHost.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\01_DAL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\obj\Debug\04_UIL.csproj.CopyComplete
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\obj\Debug\04_UIL.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\obj\Debug\04_UIL.pdb
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Cors.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Http.Cors.dll
+C:\Users\USER\Desktop\studies\projects\forth proj draft\Forth_Proj_Server\04_UIL\bin\System.Web.Http.Cors.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\04_UIL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\04_UIL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\04_UIL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\csc.exe
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\csc.exe.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\csc.rsp
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\csi.exe
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\csi.exe.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\csi.rsp
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.AppContext.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Console.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.IO.Compression.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.IO.Pipes.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.Claims.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Threading.Thread.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.ValueTuple.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Xml.XPath.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\vbc.exe
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\vbc.exe.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\vbc.rsp
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\VBCSCompiler.exe
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\02_BOL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\03_BLL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\EntityFramework.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Net.Http.Formatting.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Cors.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Http.Cors.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Http.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Http.WebHost.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\01_DAL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\02_BOL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\03_BLL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\03_BLL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\EntityFramework.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Net.Http.Formatting.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Http.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Http.Cors.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\System.Web.Http.WebHost.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\01_DAL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\01_DAL.dll.config
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\obj\Debug\04_UIL.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\obj\Debug\04_UIL.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\obj\Debug\04_UIL.csproj.CopyComplete
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\obj\Debug\04_UIL.dll
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\obj\Debug\04_UIL.pdb
+C:\Users\USER\Desktop\studies\worked_on_proj\car_rental\server\04_UIL\bin\02_BOL.dll.config

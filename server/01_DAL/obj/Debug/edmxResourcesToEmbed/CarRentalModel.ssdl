@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarRentalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Branchs">
+    <Key>
+      <PropertyRef Name="BranchID" />
+    </Key>
+    <Property Name="BranchID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Latitude" Type="decimal" Precision="12" Scale="8" />
+    <Property Name="Longitude" Type="decimal" Precision="12" Scale="8" />
+    <Property Name="branchName" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cars">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Name="CarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CarTypeID" Type="int" Nullable="false" />
+    <Property Name="CurrentMileage" Type="int" Nullable="false" />
+    <Property Name="IsProper" Type="bit" Nullable="false" />
+    <Property Name="IsAvailable" Type="bit" Nullable="false" />
+    <Property Name="LicensePlate" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="BranchID" Type="int" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CarTypes">
+    <Key>
+      <PropertyRef Name="CarTypeID" />
+    </Key>
+    <Property Name="CarTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ManufacturerName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="model" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DayCost" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="DayLateCost" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="ManufacturerYear" Type="int" Nullable="false" />
+    <Property Name="Transmission" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+    </Key>
+    <Property Name="OrderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RentalStart" Type="date" Nullable="false" />
+    <Property Name="RentalEnd" Type="date" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="CarID" Type="int" Nullable="false" />
+    <Property Name="ActualRentalEnd" Type="date" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="BirthDate" Type="date" />
+    <Property Name="Gender" Type="bit" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="UserRole" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Image" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_ToBranchs">
+    <End Role="Branchs" Type="Self.Branchs" Multiplicity="1" />
+    <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branchs">
+        <PropertyRef Name="BranchID" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="BranchID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ToCars">
+    <End Role="Cars" Type="Self.Cars" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cars">
+        <PropertyRef Name="CarID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="CarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ToCarTypes">
+    <End Role="CarTypes" Type="Self.CarTypes" Multiplicity="1" />
+    <End Role="Cars" Type="Self.Cars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CarTypes">
+        <PropertyRef Name="CarTypeID" />
+      </Principal>
+      <Dependent Role="Cars">
+        <PropertyRef Name="CarTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ToUsers">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="InsertBranch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="Latitude" Type="int" Mode="In" />
+    <Parameter Name="Longitude" Type="int" Mode="In" />
+    <Parameter Name="branchName" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="CarRentalModelStoreContainer">
+    <EntitySet Name="Branchs" EntityType="Self.Branchs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cars" EntityType="Self.Cars" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CarTypes" EntityType="Self.CarTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ToBranchs" Association="Self.FK_ToBranchs">
+      <End Role="Branchs" EntitySet="Branchs" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ToCars" Association="Self.FK_ToCars">
+      <End Role="Cars" EntitySet="Cars" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ToCarTypes" Association="Self.FK_ToCarTypes">
+      <End Role="CarTypes" EntitySet="CarTypes" />
+      <End Role="Cars" EntitySet="Cars" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ToUsers" Association="Self.FK_ToUsers">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
