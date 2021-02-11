@@ -24,7 +24,7 @@ client.UseDefaultCredentials = false;
 client.Credentials = new NetworkCredential("yourEmail@gmail.com", "your password"); // the sender email address & sender password
 client.EnableSsl = true; // to encrypt the connection
 ```
-&#x202b; ןבצד הלקוח ב - app, בתיקיית shared, modles, email.model, יש להכניס את אותה כתובת מייל למשתנה tomail (דוגמה למטה).
+&#x202b; ןבצד הלקוח ב - app בתיקיית shared/modles/email.model יש להכניס את אותה כתובת מייל למשתנה tomail (דוגמה למטה).
 ```typeScript
 public senderMail: string; // from = the sender mail
 public tomail: string = "yourMail@gmail.com"; // to = the recipient email
