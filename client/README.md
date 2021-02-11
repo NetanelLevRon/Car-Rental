@@ -35,16 +35,17 @@ public message: string;
 https://myaccount.google.com/u/2/lesssecureapps?pli=1&rapt=AEjHL4OfHYDM1eA_WtDStCbYY6w5icyzfDuahYnXJQHC2J50pOYVcRTlRYyTpMwbGWAfXZX1hMlfyrycfh4pHvR-urnb1eiQag
 ***
 &#x202b; בנחיתה לדף הבית, הקומפוננטה קוראת לאתחל את כל המידע הרלוואנטי לאתר כ -guest (רק בכניסה הראשונה ולאחר logout של מנהל בכדי לייבא מחדש את ה - data לאחר שנעשו שינויים) ע"י השירות מ - fullCarService כך שבלחיצה על כפתור ה - cars בסרגל הניווט כל המידע כבר יהיה מוכן לתצוגה.
-*  fullCarService (fullCar.service.ts)
+* &#x202b; fullCarService (fullCar.service.ts)
+
 &#x202b; עושה שימוש ב 4 סרוויסים ומשמש למשיכת המידע מ 4 טבלאות בדטא בייס שבצד השרת ולריכוז הנתונים תחת מודל של רכב אחד מלא (fullCar.model.ts).
 &#x202b; הצורך עלה כיוון שבהצגת כל כרטיס של רכב, בכל מקום באפליקציה, נעשה שימוש בנתונים מיותר מטבלה אחת ולכן המידע מרוכז להקלה על זמן ריצה, קוד חוזר ולוגיקה מיותרת.
 &#x202b; בנוסף על הפונקציות המשמשות לרוב למטרה הנ"ל ישנה פונקציה (setAvailabilityCarsInDB) שמופעלת, בין היתר, גם ע"י שעון דינאמי שבודק אם תאריך של שכירות לרכב שהוזמן לעתיד כבר הגיע,  ומעדכנת את זמינותו בצד השרת ובצד הלקוח.
-* cars (cars.component)
+* &#x202b; cars (cars.component)
 &#x202b; מכיל את כל הרכבים הזמינים לתצוגה (בקובץ ה- ts ישנה אפשרות להציג את כלל הרכבים ולא רק את הזמינים. הערה ניתנה בקובץ cars.component.ts שורות 51 ו-57 ) מתוך פורמט ה -fullCar בתוך משתנה - fullCarList לצורך פילטור והצגת הרכבים עם הנתונים הרלוואנטים.
 &#x202b; בלחיצה על כרטיס רכב, נקראת הפונקציה - setCarsToLocalStorage לצורך שמירת הרכב כרכב שהמשתמש התעניין בו לתצוגה בתחתית הדף (ובכל logout או כניסה מחודשת הוא מתאפס) וחלק מהדף (החלק של תצוגת הרכבים) מתחלף לcar-details (ע"י roter-outlet) והרכב מועבר אליו ע"י הפונקציה pastCurrentCar דרך 'click event' ב- html.
-* car-details (car-preview.component)
+* &#x202b; car-details (car-preview.component)
 &#x202b; במצב לקוח לא רשום (guest), מכילה את פרטי הרכב וכפתור אחד למעבר לקומפוננטה לחישוב דמי השכירות והצגת התאריכים בהם הרכב זמין (car-price). ובמצב משתמש רשום (customer) ישנו כפתור נוסף לביצוע הזמנה.
-* car-price & car-order
+* &#x202b; car-price & car-order
 &#x202b; מכילים אפשרות לחישוב דמי השכירות (ב- car-price באופן ישיר וב - car-order לאחר ביצוע הזמנה) בהשמת תאריכים רצויים להשכרה באופן שלא ניתן לבחור בתאריכים תפוסים ע"י הפונקציות   insertRelevantOrder, dateValidation ו- validateOnFutureOrders (הסבר מלא ניתן בקובצי ה- ts).
 &#x202b; ביצוע הזמנה (ב- car-order)  נעשית דרך שירות ה- order.service ונשלחת לשרת יחד עם שם משתמש וסיסמה לצורך הרשאת הגישה כ - customer - לקוח רשום.
 ## &#x202b; משתמש רשום (customer)
